@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-mar-dark: #020d12;
+  --color-mar-teal: #0a3a40;
+  --color-mar-sand: #e0e7ff;
+  --color-mar-gold: #14b8a6;
+  --color-mar-coral: #1a4a50;
+  --color-mar-glass: rgba(255, 255, 255, 0.05);
+  --color-mar-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--color-mar-dark);
+  color: var(--color-mar-sand);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-mar-gold);
+  color: var(--color-mar-dark);
+}
+
+.glass-panel {
+  background: var(--color-mar-glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--color-mar-glass-border);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #14b8a6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

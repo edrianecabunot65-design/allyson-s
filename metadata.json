@@ -1,0 +1,6 @@
+{
+  "name": "Allyson's",
+  "description": "Premium beverage company website for Allyson's. High-converting, mobile-first, luxurious.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
